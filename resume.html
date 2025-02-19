@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lauren Tapley Design & Development</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">
+            <img class="logo" src="img/tapley-logo.svg" alt="Lauren Tapley Design and Development Logo">
+        </a>
+        <ul class="underline">
+            <li><a href="index.html#web">Web</a></li>
+            <span>/</span>
+            <li><a href="index.html#graphic">Graphic</a></li>
+            <span>/</span>
+            <li><a href="resume.html">Resume</a></li>
+            <span>/</span>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="intro">
+            <h1 data-heading="The Low Down">The Low Down</h1>
+        </section>
+        <div class="bottom-section" id="resume-page">
+            <div class="resumeblurb">
+                <img class="resume" src="img/lauren-tapley-resume.jpg" alt="Lauren Tapley Graphic/Web Design and Development" width="612px">
+                <button class="button" onclick="printImg('img/lauren-tapley-resume.jpg')">Print</button>
+            </div>
+        </div>
+        <div class="resume-links">
+            <h1>Fall down the rabbit hole...</h1>
+            <div id="resume-links">
+                <a class="logo" href="https://github.com/laurentapley">
+                    <img src="img/GitHub_Logo_White.png" alt="">
+                </a>
+                <a class="logo" href="https://www.linkedin.com/in/lauren-tapley-a1a279122/">
+                    <img src="img/linkedin_logo_white.png" alt="">
+                </a>
+            </div>
+        </div>
+    </main>
+
+<footer><p>Lauren Tapley Design & Development &copy; 2017-2018 All rights reserved.</p></footer>
+<script src="js/confetti.js"></script>
+<script src="js/popup.js"></script>
+<script type="text/javascript">
+    function printImg(url) {
+        var win = window.open('');
+        win.document.write('<img src="' + url + '" onload="window.print();window.close()" />');
+        win.focus();
+    }
+</script>
+</body>
+</html>

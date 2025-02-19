@@ -1,0 +1,32 @@
+.scroll {
+    width: 40px;
+    text-align: center;
+    font-size: 2em;
+    margin-top: 20px;
+    animation: 20s show, 5s scroll infinite;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+    font-weight: 800;
+    background: #000;
+    border-radius: 50%;
+    padding: 10px;
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+}
+@keyframes show {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+@keyframes scroll {
+ 0% { opacity: 1;}
+ 50% { opacity: 0.2; }
+ 100% { opacity: 1; }
+}

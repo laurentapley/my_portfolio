@@ -1,0 +1,17 @@
+$grey: #141414;
+$shadowGrey: #c3c1c0;
+$darkGrey: #303030;
+$consoleGreen: rgba(#00cc3f, 0.9);
+$white: #fbfbfb;
+
+$break-small: 400px;
+$break-medium: 840px;
+$break-large: 1100px;
+
+@function set-nav-text-color($color) {
+    @if (lightness($color) > 50) {
+        @return #000000;
+    } @else {
+        @return #fffff;
+    }
+}

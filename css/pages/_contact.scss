@@ -1,0 +1,89 @@
+//CONTACT SECTION
+#contact-page {
+    background-color: rgb(8, 187, 152);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+.contact-info {
+    display: flex;
+    max-width: 900px;
+    flex-flow: column nowrap;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    font-size: 83px;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-decoration: none;
+    color: #000;
+    letter-spacing: 13px;
+    outline: #000 solid 2px;
+    padding: 30px;
+    a {
+        color: #000;
+    }
+    a:hover {
+        color: #fff;
+    }
+    .number {
+        font-size: 87px;
+    }
+
+    .email {
+        text-transform: none;
+        letter-spacing: 5px;
+        font-weight: 200;
+        font-size: 40px;
+    }
+
+    @media screen and (max-width: $break-large) {
+      font-size: 80px;
+      a {
+          font-size: 87px;
+      }
+
+      .number {
+          font-size: 87px;
+      }
+    }
+    @media screen and (max-width: $break-medium) {
+        font-size: 60px;
+        padding: 20px;
+        .email {
+            font-size: 27px;
+        }
+        .number {
+            font-size: 57px;
+        }
+    }
+    @media screen and (max-width: $break-small) {
+      font-size: 40px;
+      padding: 10px;
+      .email {
+          font-size: 15px;
+          font-weight: 500px;
+      }
+      .number {
+          font-size: 30px;
+      }
+    }
+}
+
+// .contactblurb {
+//     margin: auto;
+//     border: solid red 1px;
+//     p {
+//         width: 700px;
+//         margin: auto;
+//         font-size: 20px;
+//         line-height: 25px;
+//         text-align: justify;
+//     }
+// }
+
+canvas {
+    width: 100%;
+    height: 80vh;
+    position: absolute;
+}

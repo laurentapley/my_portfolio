@@ -1,0 +1,39 @@
+.console {
+    max-width: 438px;
+    margin: 0;
+    font-size: 22px;
+    font-family: monospace;
+    font-weight: 400;
+    letter-spacing: 3px;
+    color: $consoleGreen;
+    overflow: hidden;
+    white-space: nowrap;
+    text-rendering: optimizeLegibility;
+    border-right: .4em solid $consoleGreen;
+    animation: typing 4s steps(30),
+    blink-caret .9s step-end infinite;
+    transform: skew(10deg) rotate(-10deg);
+    margin-left: 0;
+    @media screen and (max-width: $break-large) {
+      font-size: 22px;
+      width: 310px;
+    }
+    @media screen and (max-width: $break-medium) {
+      font-size: 14px;
+      width: 305px;
+    }
+    @media screen and (max-width: $break-small) {
+      font-size: 14px;
+      width: 305px;
+    }
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 30% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: $consoleGreen; }
+}
